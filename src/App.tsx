@@ -11,6 +11,7 @@ import { ColorProvider } from './context/ColorContext';
 import UseCallbackDemo from './components/UseCallbackDemo';
 import UseMemoDemo from './components/UseMemoDemo';
 import UseTransitionDemo from './components/UseTransitionDemo';
+import UseCallbackChangeColorDemo from './components/UseCallbackChangeColorDemo';
 
 
 
@@ -32,6 +33,7 @@ const [view, setView] = useState<string>(''); // controls which component to sho
         <button onClick={() => setView('useCallback')}> useCallback Demo</button>
         <button onClick={() => setView('useMemo')}> useMemo Demo</button>
         <button onClick={() => setView('useTransition')}> useTransition Demo</button>
+        <button onClick={() => setView('useCallbackChangeColor')}> useCallback Change Color Demo</button>
 
         {/* Conditionally render the selected demo */}
         {view === 'useState' && <UseStateDemo />}
@@ -42,6 +44,8 @@ const [view, setView] = useState<string>(''); // controls which component to sho
         {view === 'useCallback' && <UseCallbackDemo />}
         {view === 'useMemo' && <UseMemoDemo />}
         {view === 'useTransition' && <UseTransitionDemo />}
+        {view === 'useCallbackChangeColor' && <UseCallbackChangeColorDemo />}
+
       </div>
     </ColorProvider>
   );
