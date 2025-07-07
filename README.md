@@ -10,6 +10,7 @@ This project demonstrates the usage of core React Hooks with simple, easy-to-und
 - `useReducer` – calculator with + and - operations
 - `useContext` – color context to toggle box color
 - `useCallback` – calculator with memoized calculate function
+- `useCallback`– change color example demonstrating useCallback with React.memo to prevent unnecessary child re-renders
 - `useMemo` – filtering a list of names efficiently
 - `useTransition` – filtering posts without blocking input typing
 
