@@ -1,7 +1,7 @@
 // App.tsx
 // Root component of the app. 
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import UseStateDemo from './components/UseStateDemo';
 import UseEffectDemo from './components/UseEffectDemo';
 import UseLayoutEffectDemo from './components/UseLayoutEffectDemo';
